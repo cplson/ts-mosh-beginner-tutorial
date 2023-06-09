@@ -11,13 +11,14 @@
 //     age += 10
 // console.log(age);   
 
-// when we initialize a variable, TS knows the type
+// when we initialize a variable, the compiler knows the type
 // let sales = 123_456_789;
 // let course = 'TypeScript';
 // let is_published = true;
 
 // if we declare without initializing
-// all TS knows is this of type any, something we generally want to avoid
+// all the compiler knows is that this 
+// variable is of type any, something we generally want to avoid
 // let level;
 // level = 1;
 // level = 'a';
