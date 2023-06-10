@@ -1,9 +1,16 @@
 
-// let age: number = 20;
+
+// here we explicity annotate that age is a number
+// let age: number;
 // this line throws an error at compile time
 // because ts is a statically typed language
 // age = 'a';
 
+// here, since we initialize age to 20 on declation
+// the compiler knows that age is a number,
+// therefor we don't need to explicitly annotate the type.
+// hover over age to see the compiler shows - let age: number
+// let age = 20;
 
 // using this code to check out the debugger
 // let age: number = 20;
@@ -19,6 +26,7 @@
 // if we declare without initializing
 // all the compiler knows is that this 
 // variable is of type any, something we generally want to avoid
+// because it defeats the purpose of TS type checking
 // let level;
 // level = 1;
 // level = 'a';
@@ -32,7 +40,7 @@
 // }
 
 // if we want to initialize an empty array
-// we have to explicitly apply a type annotation
+// we have to explicitly apply a type annotation like this
 // let numbers: number[] = [];
 
 // the second assignment will throw an error because
